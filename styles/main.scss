@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+$l_blue: #80e2ff;
+$l_yellow: #ffd36a;
+$black: #182327;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin heading1($color: $black) {
+  font-family: "Sentient-Bold";
+  font-size: 4.3rem;
+  color: $color;
+  line-height: 4.35rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+@mixin heading2($color: $black) {
+  font-family: "Sentient-Bold";
+  font-size: 2.6rem;
+  color: $color;
+  line-height: 2.65rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+@mixin heading3($color: $black) {
+  font-family: "Sentient-Bold";
+  font-size: 1.3rem;
+  color: $color;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+
+@mixin heading3-bold($color: $black) {
+  font-family: "Manrope";
+  font-size: 1.3rem;
+  color: $color;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+@mixin heading3-semi($color: $black) {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: $color;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+
+@mixin heading4($color: $black) {
+  font-family: "Manrope";
+  font-size: 1.2rem;
+  color: $color;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+
+@mixin button1($color: $black) {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1rem;
+  color: $color;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+@mixin button2($color: $black) {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: $color;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+
+@mixin paragraph1($color: $black) {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: $color;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+@mixin paragraph2($color: $black) {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: $color;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+@mixin paragraph3($color: $black) {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1rem;
+  color: $color;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+@mixin paragraph4($color: $black) {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: $color;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+
+  &__logo {
+    width: 40px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+
+      gap: 42px;
+
+      &__li {
+        &__a {
+          @include paragraph3();
+        }
+      }
+    }
+  }
+
+  &__left-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    &__search {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 15px 92px 15px 14px;
+
+      gap: 10px;
+
+      border: 1px solid #d8e0e2;
+      border-radius: 8px;
+
+      &__input {
+        @include paragraph4();
+        border: none;
+        outline: none;
+
+        &::placeholder {
+          @include paragraph4(#cacaca);
+        }
+      }
+    }
+
+    &__account {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__icon {
+        width: 22px;
+        height: 22px;
+        padding: 15px;
+        background: $black;
+        border-radius: 50px;
+      }
+      &__signup {
+        @include button1(#fff);
+
+        padding: 12px 24px;
+        background: $black;
+
+        border-radius: 25px;
+
+        border: none;
+        outline: none;
+
+        margin-left: 22px;
+      }
+    }
+  }
+}
+
+.hero {
+  background: url(./../assets/hero-bg.png) center / cover no-repeat;
+  width: 100%;
+  height: 662px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+
+      gap: 37px;
+    }
+
+    &__left__title {
+      @include heading1();
+    }
+
+    &__left__desc {
+      @include paragraph1();
+    }
+
+    &__right {
+      img {
+        width: 100%;
+      }
+    }
+    &__left__button {
+      width: 125px;
+      height: 60px;
+      background-color: $black;
+      border-radius: 8px;
+      color: #cacaca;
+      @include button1($color: #cacaca);
+    }
+  }
+}
+.section__title {
+  @include heading2;
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+.rating {
+  &card {
+    display: flex;
+    
+    
+  }
+}
