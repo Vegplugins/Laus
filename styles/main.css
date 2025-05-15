@@ -178,6 +178,200 @@
   margin-bottom: 70px;
 }
 
-.ratingcard {
+.rating {
+  margin-top: 150px;
   display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 70px;
+}
+.rating .section__title {
+  font-family: "Sentient-Bold";
+  font-size: 2.6rem;
+  color: #182327;
+  line-height: 2.65rem;
+  letter-spacing: 0%;
+  margin: 0;
+  width: 650px;
+}
+.rating__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+}
+.rating__card > img {
+  width: 550px;
+}
+.rating__card .card__info {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.rating__card .card__info__title {
+  font-family: "Sentient-Bold";
+  font-size: 1.3rem;
+  color: #182327;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.rating__card .card__info__stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.rating__card .card__info__price {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.rating__card .card__info__price span:nth-child(1) {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1rem;
+  color: #182327;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.rating__card .card__info__price span:nth-child(2) {
+  font-family: "Manrope";
+  font-size: 1.3rem;
+  color: #000;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.rating__card .card__info__description {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1rem;
+  color: #182327;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+  line-height: 150%;
+}
+.rating__card .card__info__buttons {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+.rating__card .card__info__buttons__button__buy-now {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+  padding: 15px 36px;
+  border: none;
+  border-radius: 8px;
+  background: #182327;
+}
+.rating__card .card__info__buttons__button__see-more {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+  padding: 15px 36px;
+  border: none;
+  background: transparent;
+}
+
+.popular {
+  margin-top: 150px;
+  display: flex;
+}
+.popular__green {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.popular__green h1 {
+  font-family: "Sentient-Bold";
+  font-size: 2.6rem;
+  color: #182327;
+  line-height: 2.65rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__green h2 {
+  font-family: "Manrope";
+  font-size: 1.3rem;
+  color: #182327;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__green p {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: #182327;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__green__under {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.popular__red {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.popular__red h1 {
+  font-family: "Sentient-Bold";
+  font-size: 2.6rem;
+  color: #182327;
+  line-height: 2.65rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__red h2 {
+  font-family: "Manrope";
+  font-size: 1.3rem;
+  color: #182327;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__red p {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: #182327;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__red__under {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nigadyai {
+  background: #80e2ff;
+  width: 100%;
+  height: 752px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

@@ -275,9 +275,141 @@ $black: #182327;
   margin-bottom: 70px;
 }
 .rating {
-  &card {
-    display: flex;
-    
-    
+  margin-top: 150px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 70px;
+
+  & .section__title {
+    @include heading2();
+    width: 650px;
   }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+
+    & > img {
+      width: 550px;
+    }
+
+    .card__info {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+
+      &__title {
+        @include heading3();
+      }
+
+      &__stars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+      }
+
+      &__price {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        & span:nth-child(1) {
+          @include paragraph3();
+        }
+        & span:nth-child(2) {
+          @include heading3-bold(#000);
+        }
+      }
+
+      &__description {
+        @include paragraph3();
+        line-height: 150%;
+      }
+
+      &__buttons {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+
+        &__button__buy-now {
+          @include button1(#fff);
+          padding: 15px 36px;
+          border: none;
+          border-radius: 8px;
+
+          background: $black;
+        }
+        &__button__see-more {
+          @include button1(#000);
+          padding: 15px 36px;
+          border: none;
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+.popular {
+  margin-top: 150px;
+  display: flex;
+  &__green {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    h1 {
+      @include heading2;
+    }
+    h2 {
+      @include heading3-bold();
+    }
+    p {
+      @include paragraph4();
+    }
+    &__under {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__red {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    h1 {
+      @include heading2;
+    }
+    h2 {
+      @include heading3-bold;
+    }
+    p {
+      @include paragraph4();
+    }
+    &__under {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+.nigadyai{
+  background: $l_blue;
+  width: 100%;
+  height: 752px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
 }
